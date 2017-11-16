@@ -114,7 +114,7 @@
 				    oImg.src = "";
 				 }
 			 }else{
-				 if(file.type == "image/jpeg" || file.type == "image/png"){
+				 if(file.type != "image/jpeg" && file.type != "image/png"){
 					 alert('图片格式不对');
 				 }else if(file.size < 1048576){
 					 alert('图片不能大于1M');

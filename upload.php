@@ -77,7 +77,7 @@
 				else{
 					if($_FILES["portrait"]["type"]=="image/jpeg" || $_FILES["portrait"]["type"]=="image/png"){
 						$portraiterr = '图片格式不对';
-					}else if($_FILES["portrait"]["size"]<1048576){
+					}else if($_FILES["portrait"]["size"]>1048576){
 						$portraiterr = '图片不能大于1M';
 					}
 				}
@@ -116,7 +116,7 @@
 			 }else{
 				 if(file.type != "image/jpeg" && file.type != "image/png"){
 					 alert('图片格式不对');
-				 }else if(file.size < 1048576){
+				 }else if(file.size > 1048576){
 					 alert('图片不能大于1M');
 				 }
 			 }

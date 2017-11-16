@@ -102,7 +102,7 @@
 			 var oImg = document.getElementById('imgPortrait');
 			 var file  = _this.files[0];
 			 //保证上传的图片 而且 图片小于1m
-			 if(file.type == "image/jpeg" || file.type == "image/png" && file.size < 1048576){
+			 if((file.type == "image/jpeg" || file.type == "image/png") && file.size < 1048576){
 				 var reader = new FileReader();
 				 reader.onloadend = function () {
 					 console.log(reader.result);
